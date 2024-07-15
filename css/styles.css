@@ -268,3 +268,48 @@ body, html {
 .bebe-girl {
   animation: balancear 2s infinite ease-in-out;
 }
+
+.first-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttom {
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: 'IntroScript';
+  padding: 15px 30px;
+  color: #5f4c86;
+  background-color: transparent ;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(2, 2, 2, 0.321);
+  transition: background-color 0.3s, box-shadow 0.4s;
+}
+
+.escritura {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #007bff; /* Cursor de escritura */
+  white-space: nowrap;
+  letter-spacing: 2px;
+  animation: escritura 2s steps(12);
+}
+
+.click {
+  color: #272629;
+  font-family: "Bellota";
+  text-align: center;
+}
+
+@keyframes escritura {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.second-page {
+  display: none
+}
