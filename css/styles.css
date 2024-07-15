@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+  font-family: 'IntroScript';
+  src: url('../fonts/IntroScript-Bold.woff');
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+}
+
+.page {
+  position: relative;
+  height: 100vh;
+  color: white;
+  padding: 20px
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  padding: 5px;
+  background-image: url('../img/nubes-fondo.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.43; 
+  z-index: -1;
+}
+
+.title-principal{
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Bellota";
+  margin: 0px;
+  color: #000000;
+  line-height: 0.8
+}
+
+.bebes-elefantes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  gap: 10px;
+
+}
+
+.bebe-boy img {
+  max-height: 150px;
+}
+
+.bebe-girl img {
+  max-height: 150px;
+}
+
+.descripcion p {
+  text-align: center;
+  font-size: 1.1em;
+  font-family: "Bellota";
+  margin: 0px;
+  color: #000000;
+}
+
+.principe-princesa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.pies img{
+  max-width: 50px;
+}
+
+.principe-princesa-text {
+  font-family: 'IntroScript';
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 0px;
+  color: #000000;
+}
+
+.principe-princesa-text span:nth-child(1) {
+  color:#6baaff;
+}
+
+.principe-princesa-text span:nth-child(2) {
+  color:#000000;
+}
+
+.principe-princesa-text span:nth-child(3) {
+  color:#ff66c4;
+}
+
+.line-month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.line {
+  border: 1px solid black;
+  width: 28%;
+}
+.month {
+  font-family: 'IntroScript';
+  text-align: center;
+  font-size: 1.9rem;
+  margin: 0px;
+  color: #000000;
+}
+
+.fecha-hora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: 'IntroScript';
+  color: #000000;
+}
+
+.fecha span {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.semana {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #000000;
+}
+
+.dia {
+  font-family: 'IntroScript';
+  color: #000000;
+  font-size: 1.9rem;
+}
+
+.hora {
+  font-family: 'IntroScript';
+  color: #000000;
+  font-size: 1.9rem;
+}
+
+.direccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.direccion img {
+  max-width: 10px;
+}
+
+.direccion a {
+  font-family: 'IntroScript';
+  font-size: 1.5rem;
+  text-decoration: none;
+} 
+
+.venir {
+  font-family: 'Bellota';
+  color: #000000;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bodies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.body-azul img {
+  max-height: 170px;
+}
+
+.body-rosa img{
+  max-height: 170px;
+}
+
+.body-azul p {
+  color: #6baaff;
+  font-family: 'IntroScript';
+  font-weight: 700;
+  font-size: 1.3rem;
+  max-width: 150px;
+  text-align: center;
+}
+
+.body-rosa p {
+  color: #ff66c4;
+  font-family: 'IntroScript';
+  font-weight: 700;
+  font-size: 1.3rem;
+  max-width: 150px;
+  text-align: center;
+}
+
+.esperar {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Bellota";
+  margin: 0px;
+  color: #000000;
+}
+
+.pasitos {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pasitos img {
+ max-width: 70px;
+}
+
+.pasitos img:nth-child(1) {
+  transform: rotate(80deg);
+}
+
+.pasitos img:nth-child(2) {
+  transform: rotate(60deg);
+}
+
+.pasitos img:nth-child(3) {
+  transform: rotate(80deg);
+}
+
+.pasitos img:nth-child(4) {
+  transform: rotate(110deg);
+}
+
+.pasitos img:nth-child(5) {
+  transform: rotate(80deg);
+}
+
+@keyframes balancear {
+  0% {
+      transform: rotate(-5deg);
+  }
+  50% {
+      transform: rotate(5deg);
+  }
+  100% {
+      transform: rotate(-5deg);
+  }
+}
+
+.bebe-boy {
+  animation: balancear 2s infinite ease-in-out;
+}
+
+.bebe-girl {
+  animation: balancear 2s infinite ease-in-out;
+}
